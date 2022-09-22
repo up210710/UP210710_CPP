@@ -12,7 +12,7 @@ int main(){
             suma1+=i;
         }
     }
-    printf(" El numero impar es %d \n",suma1);
+    printf(" El numero impar es %d \n",suma1);            
     cout<<endl;
     printf(" El numero par es : %d \n",suma);
     cout<<endl;
