@@ -1,6 +1,5 @@
 # UP210710_CPP
 ## Juan Manuel Rios Estrada
--Es un ejemplo.
+-Un ejemplo seria:
 ## Esta imagen es realmente bonita
-
-![Prueba 1](\C\Users\riose\Downloads\John.jpg)
+![Prueba](https://static.wikia.nocookie.net/memes-pedia/images/c/c1/John_Xina.png/revision/latest?cb=20211125075052&path-prefix=es)
