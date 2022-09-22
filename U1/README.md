@@ -1,1 +1,1 @@
-![Prueba](imagenes/665354.png)
+![Prueba](Imagenes/665354.png)
