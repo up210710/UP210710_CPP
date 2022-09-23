@@ -10,15 +10,15 @@ int main(){
             cout<<"Primera edad ";
             cout<<endl;
         }
-        if(E<31 && E<=60){
+        else if(E<31 && E<=60){
             cout<<"Segunda edad ";
             cout<<endl;
         }
-        if(E<61 && E<=90){
+        else if(E<61 && E<=90){
             cout<<"Tercera edad ";
             cout<<endl;
         }
-        if(E<90 && E<=150){
+        else if(E<90 && E<=150){
             cout<<"Horas extras ";
             cout<<endl;
         }
@@ -27,5 +27,6 @@ int main(){
         cout<<"Bajale carnal ";
         cout<<endl;
     }
+    getchar();
     return 0;
 }
