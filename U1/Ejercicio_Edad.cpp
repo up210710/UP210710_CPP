@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int E;
+    int E,i=0;
+    while(i<=5){
     cout<<"Introduce la edad de una familiar: ";
     cin>>E;
     cout<<endl;
@@ -26,6 +27,8 @@ int main(){
     else{
         cout<<"Bajale carnal ";
         cout<<endl;
+    }
+    i=i+1;
     }
     getchar();
     return 0;
