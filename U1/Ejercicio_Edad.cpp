@@ -1,3 +1,15 @@
+/*
+    Unidad 1. Ejericio De Las Edades
+    Autor: Juan Manuel Rios Estrada
+    Fecha: 27/09/2022
+    Objetivo: Definir la etapa de la persona
+              [1...150] Validacion 
+              [1...30 ] 1ra Edad
+              [31...60] 2da Edad
+              [61...90] 3ra Edad
+              [91...  ] Horas extras
+*/
+
 #include <iostream>
 using namespace std;
 int main()
@@ -23,7 +35,7 @@ int main()
             cout << "Tercera edad ";
             cout << endl;
         }
-        else if (E >= 91 && E <= 150)
+        else if (E >= 91)
         {
             cout << "Horas extras ";
             cout << endl;
@@ -31,7 +43,7 @@ int main()
     }
     else
     {
-        cout << "Bajale carnal ";
+        cout << "Bajale carnal y el rango es invalido";
         cout << endl;
     }
     getchar();
