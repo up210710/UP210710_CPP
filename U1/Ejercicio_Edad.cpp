@@ -35,7 +35,7 @@ int main()
             cout << "Tercera edad ";
             cout << endl;
         }
-        else if (E >= 91)
+        else
         {
             cout << "Horas extras ";
             cout << endl;
