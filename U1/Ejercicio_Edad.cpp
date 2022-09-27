@@ -3,7 +3,7 @@
     Autor: Juan Manuel Rios Estrada
     Fecha: 27/09/2022
     Objetivo: Definir la etapa de la persona
-              [1...150] Validacion 
+              [1...150] Validacion
               [1...30 ] 1ra Edad
               [31...60] 2da Edad
               [61...90] 3ra Edad
