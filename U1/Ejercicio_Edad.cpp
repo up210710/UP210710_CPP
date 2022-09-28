@@ -22,29 +22,24 @@ int main()
     {
         if (E <= 30)
         {
-            cout << "Primera edad ";
-            cout << endl;
+            cout << "Primera edad " << endl;
         }
         else if (E >= 31 && E <= 60)
         {
-            cout << "Segunda edad ";
-            cout << endl;
+            cout << "Segunda edad " << endl;
         }
         else if (E >= 61 && E <= 90)
         {
-            cout << "Tercera edad ";
-            cout << endl;
+            cout << "Tercera edad " << endl;
         }
         else
         {
-            cout << "Horas extras ";
-            cout << endl;
+            cout << "Horas extras " << endl;
         }
     }
     else
     {
-        cout << "Bajale carnal y el rango es invalido";
-        cout << endl;
+        cout << "Bajale carnal y el rango es invalido" << endl;
     }
     getchar();
     return 0;
