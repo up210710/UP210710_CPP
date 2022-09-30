@@ -22,10 +22,10 @@
 
 ## 03_tiposdedatos.cpp
 <div align="center">
-<img alt="Programa 1.3_tiposdedatos.cpp" src='Imagenes/tiposdedatos.png' width='400'>
+<img alt="Programa 1.3_tiposdedatos.cpp" src='Imagenes/tipodedatos.png' width='400'>
 </div>
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/tiposdedatoscorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/tipodedatoscorrida.png' width='400'>
 </div>
 
 ## 04_Ciclos.cpp
