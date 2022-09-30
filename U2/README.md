@@ -1,6 +1,6 @@
 <center> Hola
-</center>
-<center> Bienvenido a la programacion 
+
+Bienvenido a la programacion 
 </center>
 
 # H1 Linea de encabezado 
