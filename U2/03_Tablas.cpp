@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int N, o;
+    int N, o, p = 1;
     cout << "Introduce el numero que quieres conocer su tabla de multiplicar: ";
     cin >> N;
     cout << "hasta que numero quieres la multiplicacion: ";
@@ -31,6 +31,17 @@ int main()
         cout << N << " X " << j << " = " << j * N << endl;
         j--;
     }
-
+    cout << "Tabla de multiplicar de forma normal con el do while: " << endl;
+    do
+    {
+        cout << N << " X " << p << " = " << p * N << endl;
+        p++;
+    } while (p <= o);
+    cout << "Tabla de multiplicar de forma descendentes con el do while: " << endl;
+    do
+    {
+        cout << N << " X " << p << " = " << p * N << endl;
+        p--;
+    } while (p > 0);
     return 0;
 }

@@ -117,3 +117,11 @@ https://www.google.com.mx/search?q=lluvia+de+hamburguesas+meme+policia&tbm=isch&
 <div align="center">
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='400'>
 </div>
+
+## 04_Tablademulti.cpp
+<div align="center">
+<img alt="Programa 2.4_Tablademulti.cpp" src='Imagenes/Tablademulti.png' width='400'>
+</div>
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Tablademulti.png' width='400'>
+</div>
