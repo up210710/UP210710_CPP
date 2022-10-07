@@ -125,3 +125,30 @@ https://www.google.com.mx/search?q=lluvia+de+hamburguesas+meme+policia&tbm=isch&
 <div align="center">
 <img alt="Ejecuccion" src='Imagenes/Tablademulti.png' width='400'>
 </div>
+
+## 05_forfor.cpp
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, o, p = 1;
+    cout << "Introduce el numero que quieres conocer su tabla de multiplicar: ";
+    cin >> N;
+    cout << "hasta que numero quieres la multiplicacion: ";
+    cin >> o;
+    cout << "Tabla de multiplicar de forma normal: " << endl;
+    for (int i = 1; i <= o; i++)
+    {
+        for (int j = 1; j <= o; j++)
+        {
+            cout << endl;
+            cout << i << " X " << j << " = " << i * j << endl;
+        }
+    }
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/forfor.png' width='400'>
+</div>
