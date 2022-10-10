@@ -36,7 +36,7 @@ int main()
     }
     else if (punto >= 0.6)
     {
-        cout << "Tu nivel es Mérito \n";
+        cout << "Tu nivel de Mérito es \n";
         beneficio = monto * punto;
         cout << "tu beneficio es: $" << beneficio << endl;
     }

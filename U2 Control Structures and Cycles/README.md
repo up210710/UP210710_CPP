@@ -169,8 +169,308 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='400'>
 </div>
 
+## 06_Puntos.cpp
+```
+/*
+Date: 07/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: Puntuacion de usuario y bono
+Last Modification: 09/10/2022
+*/
+#include <iostream>
+#include <ctype.h>
 
+using namespace std;
 
+int main()
+{
+    double punto;
+    double monto = 2400;
+    double beneficio = 0;
+
+    cout << "Cuál es la puntuación del usuario? ";
+    cin >> punto;
+    if (punto == 0.0)
+    {
+        cout << "Su nivel es Inaceptable \n";
+        beneficio = monto * punto;
+        cout << "tu beneficio es: $" << beneficio << endl;
+    }
+    else if (punto == 0.4)
+    {
+        cout << "Su nivel es aceptable  \n";
+        beneficio = monto * punto;
+        cout << "tu beneficio es: $" << beneficio << endl;
+    }
+    else if (punto > 1)
+    {
+        cout << "Introduce una puntuación válida" << endl;
+    }
+    else if (punto >= 0.6)
+    {
+        cout << "Tu nivel de Mérito es \n";
+        beneficio = monto * punto;
+        cout << "tu beneficio es: $" << beneficio << endl;
+    }
+    else
+    {
+        cout << "Introduce una puntuación válida" << endl;
+    }
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Puntoscorrida.png' width='400'>
+</div>
+
+## 07_Juegos.cpp
+```
+/*
+Date: 07/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: pase para juegos
+Last Modification: 09/10/2022
+*/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int edad;
+    int precio;
+    cout << "Cuantos años tienes ";
+    cin >> edad;
+    if (edad < 4)
+        precio = 0;
+    else if (edad >= 4 && edad <= 18)
+        precio = 5;
+    else if (edad > 18)
+        precio = 10;
+    cout << "Tienes que pagar: $" << precio << endl;
+    cout << "Bienvenidos a los Juegos de Los Pollos Hermanos" << endl;
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Juegoscorrida.png' width='400'>
+</div>
+
+## 08_Pizza.cpp
+```
+/*
+Date: 07/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: Pizza vegetariana y no vegetariana
+Last Modification: 09/10/2022
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int pizza;
+    int typo;
+    int ingredientes = 0;
+    cout << "que tipo de pizza quieres \n";
+    cout << "Elige con 1 y 2 \n";
+    cout << "pizza vegetariana es 1 \n";
+    cout << "La pizza normal es 2 \n";
+    cin >> typo;
+    if (typo == 1)
+    {
+        cout << "Seleccionas una Pizza Vegetariana \n";
+        cout << "Elige un ingrediente \n";
+        cout << "Puedes elegir pimienta o tofu \n";
+        cout << "Elige con 1 y 2 \n";
+        cout << "la pimienta es 1 \n";
+        cout << "El Tofu es el 2 \n";
+        cin >> ingredientes;
+        if (ingredientes == 1)
+        {
+            cout << "tu eliges la pimienta \n";
+            cout << "Y tu pizza incluye Pimienta, Queso de Soja y Salsa de Tomate \n";
+            cout << "\n";
+        }
+        else if (ingredientes == 2)
+        {
+            cout << "tu eliges el Tofu \n";
+            cout << "Y tu pizza incluye Tofu, Queso de Soja y Salsa de Tomate \n";
+            cout << "\n";
+        }
+    }
+    if (typo == 2)
+    {
+        cout << "Seleccionas una Pizza Normal \n";
+        cout << "Elige un ingrediente \n";
+        cout << "Puedes elegir pepperoni, jamón o salmón\n";
+        cout << "EL Pepperoni es el 1 \n";
+        cout << "El jamon es el 2 \n";
+        cout << "El Salmon es el 3 \n";
+        cout << "\n";
+        cin >> ingredientes;
+        if (ingredientes == 1)
+        {
+            cout << "Tu eliges el pepperoni \n";
+            cout << "Y tu pizza incluye pepperoni, mozarella y salsa de tomate \n";
+            cout << "\n";
+        }
+        else if (ingredientes == 2)
+        {
+            cout << "Tu eliges el jamon \n";
+            cout << "Y tu pizza incluye jamón, mozarella y salsa de tomate \n";
+            cout << "\n";
+        }
+        else if (ingredientes == 3)
+        {
+            cout << "Tu eliges el salmon \n";
+            cout << "Y tu pizza incluye salmón, mozarella y salsa de tomate \n";
+            cout << "\n";
+        }
+    }
+    cout << "tu pizza estará lista en menos de lo que canta un águila \n";
+    cout << "GRACIAS POR visitar Box Pizzas ";
+    cout << "\n";
+    cout << "\n";
+    cout << "\n";
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Pizzacorrida.png' width='400'>
+</div>
+
+## 09_Temperatura.cpp
+```
+/*
+Date: 07/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: Temperatura
+Last Modification: 09/10/2022
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+    float temperatura;
+    int contador = 1;
+    float tempeAcum = 0;
+    int temperatura_min = 9999, temperatura_max = -9999;
+    cout << "Bienvenido a las Farmacias UPA´s \n";
+    do
+    {
+        cout << "dame una temperatura" << endl;
+        cin >> temperatura;
+        tempeAcum += temperatura;
+
+        contador++;
+        if (temperatura <= temperatura_min)
+        {
+            temperatura_min = temperatura;
+        }
+        if (temperatura >= temperatura_max)
+        {
+            temperatura_max = temperatura;
+        }
+    } while (contador <= 6);
+    cout << "La temperatura promedio de hoy es: " << tempeAcum / 6 << endl;
+    cout << "La temperatura mínima es: " << temperatura_min << endl;
+    cout << "La temperatura máxima es: " << temperatura_max << endl;
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Temperaturacorrida.png' width='400'>
+</div>
+
+## 10_Precios.cpp
+```
+/*
+Date: 09/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: Calcular el precio de una compra.
+Last Modification: 09/10/2022
+*/
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int producto;
+    float precio;
+    float calculo = 0;
+    float total = 0;
+    int vuelta;
+
+    cout << "Bienvenido al oxxo \n";
+
+    do
+    {
+        cout << "Dame la cantidad de productos \n";
+        cin >> producto;
+
+        if (producto != 0 and producto > 0)
+        {
+
+            cout << "Dime el precio del producto. \n";
+            cin >> precio;
+
+            total += (precio * producto);
+        }
+
+    } while (producto != 0);
+
+    cout << "El total de tu compra es: \n"
+         << total << endl;
+
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Precioscorrida.png' width='400'>
+</div>
+
+## 11_BintoDecim.cpp
+```
+/*
+Date: 09/10/2022
+Author: Juan Manuel Rios Estrada
+Email: up210710@alumnos.upa.edu.mx
+Description: conversión de binario a decimal
+Last Modification: 09/10/2022
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int exp,digito;
+    double binario, decimal;
+   cout << "Introduce numero: ";
+   cin >> binario;
+   exp=0;
+   decimal=0;
+   while(((int)(binario/10))!=0)
+   {
+           digito = (int)binario % 10;
+           decimal = decimal + digito * pow(2.0,exp);
+           exp++;
+           binario=(int)(binario/10);
+   }
+   decimal=decimal + binario * pow(2.0,exp);
+   cout << endl << "Decimal: " << decimal << endl;
+    
+    return 0;
+}
+```
+<div align="center">
+<img alt="Ejecuccion" src='Imagenes/Binocorrida.png' width='400'>
+</div>
 # These are the exercises done in class
 <center> Hola     
 
