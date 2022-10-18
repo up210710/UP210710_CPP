@@ -30,6 +30,20 @@ double Ec2(double x)
     y = pow(E,-x)+4*pow(x,3)-5;
     return y;
 }
+string camello(string x)
+{
+    int lon= x.length();
+    for (int i = 0; i < lon; i++)
+    {
+        if (islower(x[i])){
+        x[i]=toupper(x[i]); 
+        }  
+        else{
+        x[i]=tolower(x[i]);    
+        }         
+    }
+    return x;
+}
 int main()
 {
     int n = 10;
@@ -48,5 +62,8 @@ int main()
     cout << "El resultado de la ecuacion es: " << x << endl;
     cout<<endl;
     printf("%12.10f",x);
+    cout<<endl;
+    string res = camello("Upa");
+    cout<<res<<endl;
     return 0;
 }
