@@ -46,7 +46,7 @@ int main()
 }
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Bi.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Bi.png' width='600'>
 </div>
 
 * [02_tramo.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/02_tramo.cpp)
@@ -56,7 +56,7 @@ int main()
 
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/abccorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/abccorrida.png' width='600'>
 </div>
 
 * [03_Tablas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/03_Tablas.cpp)
@@ -66,7 +66,7 @@ int main()
 
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
 </div>
 
 * [06_Puntos.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/06_Puntos.cpp)
@@ -76,7 +76,7 @@ int main()
 
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Puntoscorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Puntoscorrida.png' width='600'>
 </div>
 
 * [E5_monedas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/E08_monedas.cpp)
@@ -157,7 +157,7 @@ void imprimirCambio(){
 }
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Money.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Money.png' width='600'>
 </div>
 
 * [E06_Romanos.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/E09_Romanos.cpp)
@@ -194,7 +194,7 @@ int main()
 }
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Roma.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Roma.png' width='600'>
 </div>
 
 * [09_Temperatura.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/09_Temperatura.cpp)
@@ -203,7 +203,7 @@ int main()
 ```
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Temperaturacorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Temperaturacorrida.png' width='600'>
 </div>
 
 * [10_Precios.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/10_Precios.cpp)
@@ -212,7 +212,7 @@ int main()
 ```
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Precioscorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Precioscorrida.png' width='600'>
 </div>
 
 * [11_BintoDecim.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/11_BintoDecim.cpp)
@@ -221,5 +221,5 @@ int main()
 ```
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Binocorrida.png' width='400'>
+<img alt="Ejecuccion" src='Imagenes/Binocorrida.png' width='600'>
 </div>
