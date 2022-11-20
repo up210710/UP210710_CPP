@@ -7,7 +7,7 @@ void obtenerMonedas(int);
 void imprimirCambio();
 
 //variables globales 
-int quinientos = 0, doscientos = 0, cien = 0;
+int mil = 0, quinientos = 0, doscientos = 0, cien = 0;
 int cincuenta = 0, veinte = 0;
 int diez = 0, cinco = 0, dos = 0, uno = 0;
 int resi; 
@@ -40,9 +40,10 @@ void obtenerMonedas(int dinero){
 }
 
 void obtenerCambio(int dinero){
-
-    quinientos = dinero/500;
-    resi = dinero%500;
+    mil=dinero/1000;
+    resi = dinero%1000;
+    quinientos = resi/500;
+    resi = resi%500;
     doscientos = resi/200;
     resi = resi%200;
     cien = resi/100;
@@ -58,6 +59,7 @@ void obtenerCambio(int dinero){
 void imprimirCambio(){
 
     cout << "Tu cambio es: " << "\n"; 
+    cout << "Billetes de $1000: \n" << mil << "\n";
     cout << "Billetes de $500: \n" << quinientos << "\n";
     cout << "Billetes de $200: \n" << doscientos << "\n";
     cout << "Billetes de $100: \n" << cien << "\n"; 
