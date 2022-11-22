@@ -85,7 +85,7 @@ int esbisiesto(int year){
 <img alt="Ejecuccion" src='Imagenes/ab.png' width='600'>
 </div>
 
-* [E03_Coseno.cpp]()
+* [E03_Coseno.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/coseno.cpp)
 * Objetiv
 ### The objective of this program is the cosine value of a specific angle will be given.
 ```
@@ -132,7 +132,7 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
 </div>
 
-* [04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/desviacionestandar.cpp)
+* [E04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/desviacionestandar.cpp)
 * Objetiv
 ### The objective of this program is that at the moment of inserting the data you get the mean and with it and the formula get the standard deviation of the population and the sample
 ```
@@ -200,7 +200,7 @@ void desv(float n){
 </div>
 
 
-* [E5_monedas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/E08_monedas.cpp)
+* [E05_monedas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/E08_monedas.cpp)
 * Objetiv
 ### The objective of this program is that at the moment of putting an amount of money it is in coins or bills of 1000,500,200,100,50,20,10,5,2 and finally 1.
 ```
@@ -318,7 +318,7 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Roma.png' width='600'>
 </div>
 
-* [07_RFC.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/Rfc.cpp)
+* [E07_RFC.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/Rfc.cpp)
 * Objetivo
 ### The objective of this program is that when entering the name and the paternal and maternal surnames with the date of birth with these, the rfc will be created as a code that will be attached to the form that the rfc normally have.
 ```
@@ -398,7 +398,7 @@ void RFC(char nombre[], char apellido_paterno[], char apellido_materno[],char fe
 <img alt="Segunda ejecuccion" src='Imagenes/ter1.png' width='600'>
 </div>
 
-* [08_Vector.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/vector.cpp)
+* [E08_Vector.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/vector.cpp)
 * Objetiv
 ### The objective of this program is to order the vector data ascendingly and also mention the use and with the algorithm.
 ```
@@ -438,7 +438,7 @@ int main(){
 <img alt="Ejecuccion" src='Imagenes/Pr.png' width='600'>
 </div>
 
-* [09_Strings.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/strings.cpp)
+* [E09_Strings.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/strings.cpp)
 * Objetiv
 ### The objective of this program is recursive function from the factorial of a number.
 ```
