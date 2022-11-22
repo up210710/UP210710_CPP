@@ -129,7 +129,7 @@ int main()
 }
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/pop.png' width='600'>
 </div>
 
 * [E04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/desviacionestandar.cpp)
