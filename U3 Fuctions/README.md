@@ -49,19 +49,45 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Bi.png' width='600'>
 </div>
 
-* [02_tramo.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/02_tramo.cpp)
+* [E02_Añobisiesto.cpp]()
 * Objetiv
-### El objetivo de este programa es que se impriman el resultado de la renta con su respectivo impuesto de mismo pais con los diferentes tipos de impuestos de la ejecuccion de la misma ventana.
+### The objective of this program is that from the year 2012 it returns when it is affirmative it returns 1 and otherwise 0.
 ```
+#include <iostream>
+#include <conio.h>
+using namespace std;
 
+int esbisiesto(int);
+int main(){
+
+	int year;
+	
+	cout<<"Ingrese un año: ";
+	cin>>year;
+
+	cout<<esbisiesto(year);
+	
+	getch();
+	return 0;
+}
+
+
+int esbisiesto(int year){
+	
+	int bisiesto = 0;
+	if(year%400==0 || (year%4==0 && year%100!=0)){
+		bisiesto = 1;
+	}
+	return bisiesto;
+}
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/abccorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/ab.png' width='600'>
 </div>
 
-* [03_Tablas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/03_Tablas.cpp)
+* [E03_.cpp]()
 * Objetiv
-### El objetivo de este programa es que se impriman el resultado de la variable llamada N que es el numero principal que hace que funcione todo pero el objetivo es ejecutar o imprimir las tablas de multiplicar del mismo numero dado asi como en orden descendente y normal con los diferentes ciclos(Opcional cualquier tipo de ciclo) de la ejecuccion de la misma ventana.
+### 
 ```
 
 ```
@@ -69,7 +95,7 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
 </div>
 
-* [04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/06_Puntos.cpp)
+* [04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/desviacionestandar.cpp)
 * Objetiv
 ### The objective of this program is that at the moment of inserting the data you get the mean and with it and the formula get the standard deviation of the population and the sample
 ```
@@ -255,7 +281,7 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Roma.png' width='600'>
 </div>
 
-* [07_RFC.cpp]()
+* [07_RFC.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/Rfc.cpp)
 * Objetivo
 ### The objective of this program is that when entering the name and the paternal and maternal surnames with the date of birth with these, the rfc will be created as a code that will be attached to the form that the rfc normally have.
 ```
@@ -335,20 +361,54 @@ void RFC(char nombre[], char apellido_paterno[], char apellido_materno[],char fe
 <img alt="Segunda ejecuccion" src='Imagenes/Ter1.png' width='600'>
 </div>
 
-* [08_Vector.cpp]()
-* Objetivo
-### 
+* [08_Vector.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/vector.cpp)
+* Objetiv
+### The objective of this program is to order the vector data ascendingly and also mention the use and with the algorithm.
 ```
+#include<iostream>
+#include<conio.h>
+#include<stdio.h>
+using namespace std;
+
+
+
+int main(){
+	
+	int numeros[] = {4,1,2,3,5};
+	int i,j, aux;
+	
+	//ALgoritmo metodo burbuja
+	for(i= 0; i <5; i++){
+		for(j= 0; j <5; j++){
+			if(numeros[j] > numeros[j + 1]){
+				aux = numeros[j];
+				numeros[j] = numeros[j+1];
+				numeros[j+1] = aux;
+			}
+		}
+	}
+	
+	cout<<"Orden ascendente: "<<endl;
+		
+		for(i = 0; i <5; i++){
+			cout<<numeros[i]<<" ";
+		}
+		
+	
+	getch();
+	return 0;
+}
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Precioscorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/Pr.png' width='600'>
 </div>
 
-* [09_Strings.cpp]()
-* Objetivo
+* [09_Strings.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/strings.cpp)
+* Objetiv
 ### 
 ```
+
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Binocorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/Pn.png' width='600'>
 </div>
