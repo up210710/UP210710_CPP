@@ -85,11 +85,48 @@ int esbisiesto(int year){
 <img alt="Ejecuccion" src='Imagenes/ab.png' width='600'>
 </div>
 
-* [E03_.cpp]()
+* [E03_Coseno.cpp]()
 * Objetiv
-### 
+### The objective of this program is the cosine value of a specific angle will be given.
 ```
+#include <iostream>
+#include <math.h>
+using namespace std;
 
+#define n 6
+#define PI 3.1416
+
+long double fact(int num)
+{
+    long double p= 1.0;
+    for (int i = 1; i <= num; i++)
+    {
+        p *= i;
+    }
+    return p;
+}
+
+double rad(double grd)
+{
+    return grd * PI / 180;
+}
+
+double cos(double x)
+{
+    double resultado = 0;
+    for (int i = 0; i <= n; i++)
+    {
+        resultado = resultado + (pow(-1, i)*((pow(x, 2 * i)) / fact(2 * i)));
+    }
+    return resultado;
+}
+int main()
+{
+    double angulo = rad(60), print;
+    print = cos(angulo);
+    cout << "Coseno de 60 igual a  " << print << endl;
+    return 0;
+}
 ```
 <div align="center">
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
@@ -374,10 +411,8 @@ using namespace std;
 
 int main(){
 	
-	int numeros[] = {4,1,2,3,5};
+	int numeros[] = { 19,16,17,18,20 };
 	int i,j, aux;
-	
-	//ALgoritmo metodo burbuja
 	for(i= 0; i <5; i++){
 		for(j= 0; j <5; j++){
 			if(numeros[j] > numeros[j + 1]){
@@ -405,9 +440,26 @@ int main(){
 
 * [09_Strings.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/strings.cpp)
 * Objetiv
-### 
+### The objective of this program is recursive function from the factorial of a number.
 ```
-
+#include <iostream>
+using namespace std;
+long double factorial(int);
+int main()
+{
+    int n;
+    cout << "Introduzca un numero: ";
+    cin >> n;
+    cout << "Factorial: " << factorial(n) << endl;
+}
+long double factorial(int n)
+{
+    long double fact;
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
 ```
 <div align="center">
 <img alt="Ejecuccion" src='Imagenes/Pn.png' width='600'>
