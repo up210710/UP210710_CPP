@@ -355,10 +355,10 @@ void RFC(char nombre[], char apellido_paterno[], char apellido_materno[],char fe
 }
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Ter.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/ter.png' width='600'>
 </div>
 <div align="center">
-<img alt="Segunda ejecuccion" src='Imagenes/Ter1.png' width='600'>
+<img alt="Segunda ejecuccion" src='Imagenes/ter1.png' width='600'>
 </div>
 
 * [08_Vector.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/vector.cpp)
