@@ -69,15 +69,73 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Tablascorrida.png' width='600'>
 </div>
 
-* [06_Puntos.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/06_Puntos.cpp)
+* [04_desviacionestandar.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/06_Puntos.cpp)
 * Objetiv
-### El objetivo de este programa es que se impriman el resultado de una determinada empresa que sus empleados son evaluados al final de cada año y quiere obtener en la evaluación es que comienze en 0.0 y pueden ir aumentando, traduciéndose en mejores beneficios. Los puntos que pueden conseguir los empleadospueden ser 0.0, 0.4, 0.6 o más, pero no valores intermedios entre las cifras mencionadas. A continuación se muestra una tabla con los niveles correspondientes a cada puntuación que se vera el resultado en el mismo programa.
+### The objective of this program is that at the moment of inserting the data you get the mean and with it and the formula get the standard deviation of the population and the sample
 ```
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+using namespace std;
 
+
+void desv(float );
+
+int main(){
+	float n;
+	cout<<"Ingrese su numero de datos: ";cin>>n;
+	
+	desv(n);
+	
+	getch();
+	return 0;
+}
+
+void desv(float n){
+	
+	float va = 0, prom = 0, suma = 0, s = 0, dv = 0;
+	
+	
+	float datos[100];
+	
+	for(int i = 0; i < n; i++){
+		
+		cout<<"Ingrese sus datos: ";cin>>datos[i];
+        cout<<endl;
+	}
+
+
+	for (int i = 0; i < n; i++)
+	{
+		s = s + datos[i];
+	}
+	
+	prom = s/n;
+	for (int i = 0; i < n; i++)
+	{
+		 suma = suma + (pow((datos[i] - prom),2));
+		 
+	}
+	
+	
+	va = suma/(n-1);
+	dv = sqrt(va);
+	
+	
+	cout<<"\nDesviación estándar muestra: "<<dv;
+	va = suma/(n);
+	dv = sqrt(va);
+	cout<<"\nDesviación estándar poblacional: "<<dv;
+}
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Puntoscorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/dev.png' width='600'>
 </div>
+
+<div align="center">
+<img alt="Segunda ejecuccion" src='Imagenes/dev1.png' width='600'>
+</div>
+
 
 * [E5_monedas.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U3%20Fuctions/E08_monedas.cpp)
 * Objetiv
@@ -197,27 +255,98 @@ int main()
 <img alt="Ejecuccion" src='Imagenes/Roma.png' width='600'>
 </div>
 
-* [09_Temperatura.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/09_Temperatura.cpp)
+* [07_RFC.cpp]()
 * Objetivo
-### El objetivo de este programa es que se impriman el resultado del programa en el que se ingresen 6 temperaturas y determine el promedio, la mas baja y la mas alta se vera el resultado en el mismo programa.
+### The objective of this program is that when entering the name and the paternal and maternal surnames with the date of birth with these, the rfc will be created as a code that will be attached to the form that the rfc normally have.
 ```
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+using namespace std;
+
+void RFC(char nombre[], char apellido_paterno[], char apellido_materno[],char fecha[], int);
+
+int main(){
+	const int TAM = 30;
+	char nombre[TAM], apellido_paterno[TAM], apellido_materno[TAM], fecha[TAM];
+	
+	
+	
+	cout<<"Ingrese un nombre: ";
+	cin.getline(nombre,TAM,'\n');
+	cout<<"Ingrese su apellido paterno: ";
+	cin.getline(apellido_paterno,TAM,'\n');
+	cout<<"Ingrese su apellido materno: ";
+	cin.getline(apellido_materno,TAM,'\n');
+	cout<<"Ingrese su fecha de nacimiento aaaa/mm/dd: ";
+	cin.getline(fecha,TAM,'\n');
+	
+	RFC(nombre,apellido_paterno,apellido_materno,fecha,TAM);
+	
+	
+	getch();
+	return 0;
+}
+
+void RFC(char nombre[], char apellido_paterno[], char apellido_materno[],char fecha[],int TAM){
+	
+	char RFC[20];
+	
+	bool vocal = false;
+	int tam, tamy, c = 0;
+	strupr(nombre);
+	strupr(apellido_paterno);
+	strupr(apellido_materno);
+	tam = strlen(nombre);
+	RFC[0] = apellido_paterno[0];
+		for(int i = 1; i <= tam; i++){
+		
+		if(vocal == false){
+		switch(apellido_paterno[i]){
+			case 'A' : RFC[1] = apellido_paterno[i] ; vocal = true;break;
+			case 'E' : RFC[1] = apellido_paterno[i] ; vocal = true;break;
+			case 'I' : RFC[1] = apellido_paterno[i] ; vocal = true;break;
+			case 'O' : RFC[1] = apellido_paterno[i] ; vocal = true;break;
+			case 'U' : RFC[1] = apellido_paterno[i] ; vocal = true;break;
+		}
+		}
+	}
+	
+	RFC[2] = apellido_materno[0];
+	RFC[3] = nombre[0];
+	
+	tamy = strlen(fecha);
+
+	for(int i=0;i<10;i++){
+		if(fecha[i] != '/'){
+			RFC[4+c] = fecha[i];
+			c++;
+		}
+	}
+
+	cout<<endl<<RFC;
+	
+}
 ```
 <div align="center">
-<img alt="Ejecuccion" src='Imagenes/Temperaturacorrida.png' width='600'>
+<img alt="Ejecuccion" src='Imagenes/Ter.png' width='600'>
+</div>
+<div align="center">
+<img alt="Segunda ejecuccion" src='Imagenes/Ter1.png' width='600'>
 </div>
 
-* [10_Precios.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/10_Precios.cpp)
+* [08_Vector.cpp]()
 * Objetivo
-### El objetivo de este programa es que se impriman el resultado del programa que lea indefinidamente cantidades de productos y su precio, y al final indique el total de la factura, Para saber que se ha terminado con la compra, se deberá ingresar un 0 en la cantidad y se vera el resultado en el mismo programa.
+### 
 ```
 ```
 <div align="center">
 <img alt="Ejecuccion" src='Imagenes/Precioscorrida.png' width='600'>
 </div>
 
-* [11_BintoDecim.cpp](https://github.com/up210710/UP210710_CPP/blob/main/U2%20Control%20Structures%20and%20Cycles/11_BintoDecim.cpp)
+* [09_Strings.cpp]()
 * Objetivo
-### El objetivo de este programa es que se impriman el resultado del un programa que realice la conversión de binario a decimal, solo para números enteros mayores a 0. El resultado puede ser mostrado mediante una variable entera o en un conjunto de caracteres y se vera el resultado en el mismo programa.
+### 
 ```
 ```
 <div align="center">
